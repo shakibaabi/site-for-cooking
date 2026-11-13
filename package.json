@@ -1,0 +1,39 @@
+{
+  "name": "zaferoon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Persian ingredient-first recipe platform with a real admin panel.",
+  "scripts": {
+    "dev": "node server/index.js",
+    "build": "tsc -b && vite build",
+    "start": "node server/index.js --production",
+    "test": "node --test server/tests/*.test.js",
+    "check": "tsc -b --pretty false",
+    "test:e2e": "playwright test",
+    "demo": "node server/index.js --production --demo"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

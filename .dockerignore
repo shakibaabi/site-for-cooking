@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+data/store.json
+public/images/uploads
+.git
+test-results
+playwright-report
+*.log
